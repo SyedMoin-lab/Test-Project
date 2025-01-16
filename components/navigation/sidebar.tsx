@@ -118,7 +118,7 @@ export function Sidebar() {
         })}
       </nav>
 
-      <div className="absolute bottom-6 px-4 w-[200px]">
+      <div className="absolute bottom-6 px-4 w-full md:w-[200px]">
         <Link href="/pricing">
           <Card className="bg-gradient-to-br from-[#A855F7] to-[#D8B4FE] rounded-xl p-4 text-white hover:shadow-lg transition-shadow">
             <h3 className="text-lg font-semibold mb-1">Upgrade your plan</h3>

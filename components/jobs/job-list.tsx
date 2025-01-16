@@ -20,7 +20,7 @@ export function JobList() {
   return (
     <main className="flex-1 p-6 bg-white">
       <div className="max-w-[1200px] mx-auto">
-        <div className="flex items-center space-x-4 mb-4">
+        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mb-4">
           <Button variant="outline" className="rounded-full px-6 h-8 text-sm font-medium border-[#8B5CF6] text-[#8B5CF6]">
             Matched
           </Button>
@@ -32,18 +32,18 @@ export function JobList() {
           </Button>
         </div>
 
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-6">
           <Button className="flex-1 bg-purple-500 text-white rounded-full py-2 hover:bg-purple-600 flex items-center justify-center text-sm">
             <RefreshCw className="mr-2 h-4 w-4" />
             Change Job Reference
           </Button>
-          <Button className="bg-white text-purple-500 text-sm ml-4 rounded-full flex items-center border border-purple-500 py-1 px-3">
+          <Button className="bg-white text-purple-500 text-sm mt-4 md:mt-0 md:ml-4 rounded-full flex items-center border border-purple-500 py-1 px-3">
             <CheckCircle className="mr-1 h-4 w-4" />
             <span>Top matched</span>
           </Button>
         </div>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Job Listings */}
           <div className="col-span-2 space-y-4">
             {[

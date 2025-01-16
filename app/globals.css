@@ -80,3 +80,37 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media (max-width: 768px) {
+  :root {
+    --radius: 0.25rem;
+  }
+  body {
+    font-size: 14px;
+  }
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 90%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  .space-x-4 {
+    gap: 1rem;
+  }
+  .space-y-4 {
+    gap: 1rem;
+  }
+  .p-6 {
+    padding: 1.5rem;
+  }
+  .h-8 {
+    height: 2rem;
+  }
+  .w-full {
+    width: 100%;
+  }
+}
